@@ -1,0 +1,87 @@
+<%- include("heading") %>
+
+    <body>
+        <%- include("nav") %>
+            <!-- body -->
+
+            <body>
+                <div class="mt-32">
+                    <!-- first row -->
+                    <div class="mx-auto">
+                        <!-- card -->
+                        <div class="relative w-9/12 lg:w-6/12 xl:w-9/12 mx-auto mb-10">
+                            <!-- yellowbg -->
+                            <div
+                                class="<%= primaryColor %> absolute -right-4 -bottom-4 h-full w-full rounded-xl shadow-xl">
+                            </div>
+                            <div class="relative bg-gray-800 text-gray-100 rounded-xl xl:flex">
+
+                                <!-- image -->
+                                <img src="<%= imageAddress %>" alt="JsBasics" class="rounded-t-xl xl:w-6/12" />
+                                <div class="px-4 py-8 space-y-8">
+                                    <!-- header -->
+                                    <div class="font-extrabold text-2xl pl-8">
+                                        <%= name %>
+                                    </div>
+
+                                    <!-- description -->
+                                    <p class="text-justify">
+                                        <%= description %>
+                                            <br>
+                                            <%= moreInfo %>
+                                    </p>
+
+                                    <!-- links -->
+                                    <!-- sessions -->
+                                    <div class="flex items-center pt-3">
+                                        <span class="w-12 h-1 -ml-4 <%= primaryColor %>">
+                                        </span>
+                                        <a href="#"
+                                            class="text-black italic py-1 px-2 <%= primaryColor %> rounded-l hover:<%= secondaryColor %> transition duration-300">
+                                            Sessions
+                                        </a>
+                                        <span class="rounded-r px-2 py-1 bg-gray-100 text-black italic p4">
+                                            <%= sessions %>
+                                        </span>
+                                    </div>
+                                    <!-- teacher -->
+                                    <div class="flex items-center">
+                                        <span class="w-16 h-1 -ml-4 <%= primaryColor %>">
+                                        </span>
+                                        <a href="#"
+                                            class="text-black italic py-1 px-2 <%= primaryColor %> rounded-l hover:<%= secondaryColor %> transition duration-300">
+                                            Instructor
+                                        </a>
+                                        <span class="rounded-r px-2 py-1 bg-gray-100 text-black italic p4">
+                                            <%= instructor %>
+                                        </span>
+                                    </div>
+                                    <!-- price -->
+                                    <div class="flex items-center">
+                                        <span class="w-24 h-2 -ml-4 <%= primaryColor %>">
+                                        </span>
+                                        <a href="#"
+                                            class="text-black font-bold  text-2xl italic py-2 px-4 <%= primaryColor %> rounded-l hover:<%= secondaryColor %> transition duration-300">
+                                            Buy Course
+                                        </a>
+                                        <span
+                                            class="rounded-r px-4 py-2 bg-gray-100 text-black font-bold text-2xl italic p4">
+                                            <%= price %>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+                <%- include('footer') %>
+
+
+                    <script src="javascripts/main.js"></script>
+            </body>
+
+
+            </html>

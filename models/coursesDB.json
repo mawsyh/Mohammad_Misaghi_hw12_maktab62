@@ -1,0 +1,75 @@
+[
+    {
+        "courseId": 1,
+        "name": "JavaScript Basics",
+        "description": "Learn Javascript basics step by step by the help of the best instructors in the community. Weekly assignments and feedbacks will be available by the TAs.",
+        "price": "25$",
+        "sessions": "12",
+        "instructor": "Afhami",
+        "imageAddress": "images/javascript.jpg",
+        "moreInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, at expedita atque non beatae adipisci quos iusto voluptate a. Aperiam minus dicta doloremque sint sit ex ducimus tenetur maiores!Eos beatae reiciendis nisi minus quam, temporibus nam obcaecati quis tempore nesciunt omnis dolorum voluptatum sint deleniti sequi non amet, rem quas ducimus dolorem veritatis qucourseem officiis? Eos, eaque odio!Sapiente culpa iusto modi autem earum sequi et eum placeat, sint, veniam aut fuga unde quis porro consectetur! Sed veniam inventore nihil expedita soluta perferendis corporis doloribus voluptas qui enim?",
+        "primaryColor": "bg-yellow-400",
+        "secondaryColor": "bg-yellow-300"
+
+    },
+    {
+        "courseId": 2,
+        "name": "Python Full Course",
+        "description": "Python is an interpreted, object-oriented, high-level programming language. Full courseId with the assisstment of experienced team of instructors is available by Maktab.",
+        "price": "35$",
+        "sessions": "36",
+        "instructor": "Alirajab",
+        "imageAddress": "images/python.jpg",
+        "moreInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, at expedita atque non beatae adipisci quos iusto voluptate a. Aperiam minus dicta doloremque sint sit ex ducimus tenetur maiores!Eos beatae reiciendis nisi minus quam, temporibus nam obcaecati quis tempore nesciunt omnis dolorum voluptatum sint deleniti sequi non amet, rem quas ducimus dolorem veritatis qucourseem officiis? Eos, eaque odio!Sapiente culpa iusto modi autem earum sequi et eum placeat, sint, veniam aut fuga unde quis porro consectetur! Sed veniam inventore nihil expedita soluta perferendis corporis doloribus voluptas qui enim?",
+        "primaryColor": "bg-blue-600",
+        "secondaryColor": "bg-blue-500"
+    },
+    {
+        "courseId": 3,
+        "name": "BootStrap Advanced",
+        "description": "Bootstrap is maintained by a small team of developers on GitHub. Bootstrap is one of the most popular front-end frameworks and open source projects in the world.",
+        "price": "15$",
+        "sessions": "8",
+        "instructor": "Baghinezhad",
+        "imageAddress": "images/bootstrap.jpg",
+        "moreInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, at expedita atque non beatae adipisci quos iusto voluptate a. Aperiam minus dicta doloremque sint sit ex ducimus tenetur maiores!Eos beatae reiciendis nisi minus quam, temporibus nam obcaecati quis tempore nesciunt omnis dolorum voluptatum sint deleniti sequi non amet, rem quas ducimus dolorem veritatis qucourseem officiis? Eos, eaque odio!Sapiente culpa iusto modi autem earum sequi et eum placeat, sint, veniam aut fuga unde quis porro consectetur! Sed veniam inventore nihil expedita soluta perferendis corporis doloribus voluptas qui enim?",
+        "primaryColor": "bg-purple-700",
+        "secondaryColor": "bg-purple-600"
+    },
+    {
+        "courseId": 4,
+        "name": "VueJs Basics",
+        "description": "Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.",
+        "price": "30$",
+        "sessions": "16",
+        "instructor": "Ghazimoradi",
+        "imageAddress": "images/vue.jpg",
+        "moreInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, at expedita atque non beatae adipisci quos iusto voluptate a. Aperiam minus dicta doloremque sint sit ex ducimus tenetur maiores!Eos beatae reiciendis nisi minus quam, temporibus nam obcaecati quis tempore nesciunt omnis dolorum voluptatum sint deleniti sequi non amet, rem quas ducimus dolorem veritatis qucourseem officiis? Eos, eaque odio!Sapiente culpa iusto modi autem earum sequi et eum placeat, sint, veniam aut fuga unde quis porro consectetur! Sed veniam inventore nihil expedita soluta perferendis corporis doloribus voluptas qui enim?",
+        "primaryColor": "bg-green-400",
+        "secondaryColor": "bg-green-300"
+    },
+    {
+        "courseId": 5,
+        "name": "ReactJs 0 to 100",
+        "description": "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update your components.",
+        "price": "65$",
+        "sessions": "48",
+        "instructor": "Karimi",
+        "imageAddress": "images/react.jpg",
+        "moreInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, at expedita atque non beatae adipisci quos iusto voluptate a. Aperiam minus dicta doloremque sint sit ex ducimus tenetur maiores!Eos beatae reiciendis nisi minus quam, temporibus nam obcaecati quis tempore nesciunt omnis dolorum voluptatum sint deleniti sequi non amet, rem quas ducimus dolorem veritatis qucourseem officiis? Eos, eaque odio!Sapiente culpa iusto modi autem earum sequi et eum placeat, sint, veniam aut fuga unde quis porro consectetur! Sed veniam inventore nihil expedita soluta perferendis corporis doloribus voluptas qui enim?",
+        "primaryColor": "bg-blue-300",
+        "secondaryColor": "bg-blue-400"
+    },
+    {
+        "courseId": 6,
+        "name": "HTML5 Pro Course",
+        "description": "HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page",
+        "price": "Free",
+        "sessions": "4",
+        "instructor": "Hosseini",
+        "imageAddress": "images/html.jpg",
+        "moreInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet, at expedita atque non beatae adipisci quos iusto voluptate a. Aperiam minus dicta doloremque sint sit ex ducimus tenetur maiores!Eos beatae reiciendis nisi minus quam, temporibus nam obcaecati quis tempore nesciunt omnis dolorum voluptatum sint deleniti sequi non amet, rem quas ducimus dolorem veritatis qucourseem officiis? Eos, eaque odio!Sapiente culpa iusto modi autem earum sequi et eum placeat, sint, veniam aut fuga unde quis porro consectetur! Sed veniam inventore nihil expedita soluta perferendis corporis doloribus voluptas qui enim?",
+        "primaryColor": "bg-red-500",
+        "secondaryColor": "bg-red-400"
+    }
+]

@@ -1,0 +1,57 @@
+<%- include('heading') %>
+
+    <body>
+
+        <%- include('nav') %>
+
+            <div class="mt-[7.8rem]">
+                <div class="relative w-8/12 mx-auto mb-10 xl:mb-[7rem] xl:w-6/12 2xl:5/12">
+                    <div class="bg-gray-300 absolute shadow-xl -right-4 -bottom-4 h-full w-full rounded shadow-xl">
+                    </div>
+                    <div class="p-8 relative bg-gray-800 text-justify text-gray-200 rounded block">
+                        <h2 class="pb-8 italic text-3xl font-bold text-gray-300">Leave us a message!
+                        </h2>
+                        <div class="">
+                            <form action="" class="flex flex-col space-y-4">
+                                <div>
+                                    <label for="fname">First Name :</label>
+                                    <input class="placeholder-gray-400 text-gray-800 rounded py-2 px-4" type="text"
+                                        id="fname" name="firstname" placeholder="Your name..">
+                                </div>
+                                <div>
+                                    <label for="lname">Last Name :</label>
+                                    <input class="placeholder-gray-400 text-gray-800 rounded py-2 px-4" type=" text"
+                                        id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
+                                <div>
+                                    <label for="country">City : </label>
+                                    <select class="text-gray-800 rounded py-1 px-2" id="country" name="country">
+                                        <option value="tehran">Tehran</option>
+                                        <option value="esfahan">Esfahan</option>
+                                        <option value="yazd">Yazd</option>
+                                        <option value="shiraz">Shiraz</option>
+                                        <option value="tabriz">Tabriz</option>
+                                    </select>
+                                </div>
+                                <label for="subject">Subject :</label>
+                                <textarea class="placeholder-gray-400 text-gray-800 rounded py-2 px-4" id="subject"
+                                    name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+                                <button
+                                    class="bg-blue-500 hover:bg-blue-400 text-center font-bold py-2 px-4 rounded transition duration-300"
+                                    type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="pt-4 px-8">
+                            <p class="italic text-xs">Email: maktabSharif@fakemail.com</p>
+                            <p class="italic text-xs">Phone: 021-88664422</p>
+                            <p class="italic text-xs">Address: 25th-Bahar St-Azadi Blvr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%- include('footer') %>
+    </body>
+    <script src="javascripts/main.js"></script>
+
+    </html>

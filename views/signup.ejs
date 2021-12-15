@@ -1,0 +1,127 @@
+<%- include('heading') %>
+
+    <body>
+
+        <%- include('nav') %>
+
+            <div class="mt-[7.8rem]">
+                <div class="relative w-9/12 mx-auto mb-10 xl:mb-[7rem] xl:w-6/12 2xl:5/12">
+                    <!-- yellowbg -->
+                    <div class="bg-gray-200 absolute shadow-xl -right-4 -bottom-4 h-full w-full rounded-xl shadow-xl">
+                    </div>
+                    <div class="relative bg-gray-800 text-gray-100 rounded-xl block">
+                        <!-- icon -->
+                        <div class="flex justify-between items-center">
+                            <img src="images/logo_small.png" class="w-40 xl:hidden relative top-8 left-8"
+                                alt="Maktab logo">
+                            <div>
+                                <span id="signupMessage"
+                                    class="<%= userVisibility %> mr-8 px-4 py-3 bg-red-500 rounded pointer-events-none">User
+                                    already
+                                    exist!
+                                </span>
+                                <span id="signupMessage"
+                                    class="<%= passVisibility %> mr-8 px-4 py-3 bg-red-500 rounded pointer-events-none">Password
+                                    does not meet the requirement!
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w-full h-3/12 ml-auto pt-5">
+                            <div class="m-auto py-12 px-6 p-20 w-9/12">
+                                <div class="grid gap-6 grid-cols-2">
+                                    <button
+                                        class="py-3 px-6 rounded-xl bg-blue-100 hover:bg-blue-200 focus:bg-blue-100 active:bg-blue-200">
+                                        <div class="flex gap-4 justify-center">
+                                            <img src="images/google.svg" class="w-5" alt="">
+                                            <span
+                                                class="block w-max font-medium tracking-wide text-sm text-blue-700">with
+                                                Google</span>
+                                        </div>
+                                    </button>
+                                    <button
+                                        class="py-3 px-6 rounded-xl bg-gray-700 transition hover:bg-gray-600 active:bg-gray-600 focus:bg-gray-700">
+                                        <div class="flex gap-4 items-center justify-center text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                            </svg>
+                                            <span class="block w-max font-medium tracking-wide text-sm text-white">with
+                                                Github</span>
+                                        </div>
+                                    </button>
+                                </div>
+
+                                <div role="hidden" class="mt-12 border-t">
+                                    <span
+                                        class="block w-max mx-auto -mt-3 px-4 text-center text-gray-500 bg-blue-100">Or</span>
+                                </div>
+
+                                <form acction="/signuup" method="POST" class="space-y-6 py-6 text-gray-900">
+                                    <div class="flex justify-between space-x-4">
+                                        <div class="flex flex-col space-y-4 w-6/12">
+                                            <div>
+                                                <input id="username" type="text" name="username" placeholder="Username"
+                                                    class="w-full py-3 px-6 ring-1 ring-white rounded-xl placeholder-gray-600 bg-gray-200 transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
+                                                    required>
+                                            </div>
+
+                                            <div>
+                                                <input id="password" type="password" name="password"
+                                                    placeholder="Password"
+                                                    class="w-full py-3 px-6 ring-1 ring-white rounded-xl placeholder-gray-600 bg-gray-200 transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col space-y-4 w-6/12">
+                                            <div>
+                                                <input id="email" type="email" name="email" placeholder="Email"
+                                                    class="w-full py-3 px-6 ring-1 ring-white rounded-xl placeholder-gray-600 bg-gray-200 transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none"
+                                                    required>
+                                            </div>
+
+                                            <div>
+                                                <select id="gender" name="gender"
+                                                    class="w-full py-3 px-6 ring-1 ring-white text-gray-900 rounded-xl bg-gray-200 transition disabled:ring-gray-200 disabled:bg-gray-100 disabled:placeholder-gray-400 invalid:ring-red-400 focus:invalid:outline-none">
+                                                    <option value="male" selected>Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button type="submit"
+                                            class="w-full px-6 py-3 rounded-xl bg-sky-500 transition hover:bg-sky-600 focus:bg-sky-600 active:bg-sky-800">
+                                            <span class="font-semibold text-white text-lg">Sign Up</span>
+                                        </button>
+                                        <a href="/login" type="reset" class="w-max p-3 -ml-3">
+                                            <span class="text-sm tracking-wide text-blue-600">Already have an
+                                                account?</span>
+                                        </a>
+                                    </div>
+                                </form>
+                                <div class="border-t pt-8"></div>
+                                <div class="flex justify-between items-center">
+                                    <a href="/"
+                                        class="font-extrabold bg-blue-100 hover:bg-blue-200 text-black rounded shadow-xl px-12 py-3 text-white text-center w-48">
+                                        Class List
+                                    </a>
+                                    <a href="/" class="hidden xl:block">
+                                        <img src="images/logo_small.png" class="w-32" alt="Maktab logo">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%- include('footer') %>
+    </body>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/sendSignupInfo.js"></script>
+
+    </html>

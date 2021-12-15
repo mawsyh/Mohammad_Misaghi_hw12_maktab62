@@ -1,0 +1,107 @@
+<%- include("heading") %>
+
+    <body>
+        <%- include("nav") %>
+            <!-- body -->
+
+            <body>
+                <div class="my-40">
+                    <div class="sm:flex sm:justify-between">
+                        <form onsubmit="searchCourses(event)"
+                            class="sm:mx-8 mx-16 mb-8 font-extrabold bg-black rounded shadow text-white text-center flex justify-between">
+                            <input type="text"
+                                class="bg-transparent rounded-l twxt-white outline-none focus:bg-transparent w-10/12 py-3 px-4"
+                                id="search-bar" placeholder="Search..." required>
+                            <button type="submit" id="search-btn" class="bg-gray-800 w-2/12 py-3 px-4 rounded">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                        <h2
+                            class="sm:mx-8 mx-16 mb-8 font-extrabold bg-yellow-400 text-black rounded shadow px-4 py-3 text-white text-center">
+                            For full access please Login
+                        </h2>
+                    </div>
+                    <div id="cartsContainer">
+                        <% for (let i=0; i < coursesCount; i++ ) { %>
+                            <% if ((i+2)%2===0) { %>
+                                <div class="lg:px-8 lg:flex lg:space-x-16 xl:space-x-16">
+                                    <% } %>
+                                        <!-- card -->
+                                        <div id=<%=i+1 %> class="relative xl:h-80 lg:w-6/12 w-9/12 mx-auto mb-20">
+                                            <!-- yellowbg -->
+                                            <div
+                                                class="<%= coursesDatabase[i].primaryColor %> absolute -right-4 -bottom-4 h-full w-full rounded-xl shadow-xl">
+                                            </div>
+                                            <div
+                                                class="relative bg-gray-800 text-gray-100 rounded-xl xl:flex block xl:h-80">
+
+
+                                                <!-- image -->
+                                                <img src="<%= coursesDatabase[i].imageAddress %>" alt="JsBasics"
+                                                    class="xl:rounded-l-xl xl:rounded-tr-none xl:w-6/12 lg:h-full rounded-t-xl" />
+                                                <div class="px-2 py-8 space-y-4">
+                                                    <!-- header -->
+                                                    <div class="font-extrabold text-2xl pl-4">
+                                                        <%= coursesDatabase[i].name %>
+                                                    </div>
+
+                                                    <!-- description -->
+                                                    <p>
+                                                        <%= coursesDatabase[i].description %>
+                                                    </p>
+
+                                                    <!-- link -->
+                                                    <div class="flex items-center py-2 2xl:py-8">
+                                                        <span
+                                                            class="lg:w-8 w-24 h-2 lg:h-0.5 -ml-2 <%= coursesDatabase[i].primaryColor %>">
+                                                        </span>
+                                                        <a href="/courses/<%= i+1 %>"
+                                                            class="text-black font-bold lg:font-normal text-2xl lg:text-base italic lg:p-2 py-2 px-4 <%= coursesDatabase[i].primaryColor %> rounded-l hover:<%= coursesDatabase[i].secondaryColor %> transition duration-300">
+                                                            View Course
+                                                        </a>
+                                                        <span
+                                                            class="rounded-r px-4 py-2 bg-gray-100 text-black font-boldlg:font-normal text-2xl lg:text-base italic lg:py-2 lg:px-2 p4">
+                                                            <%= coursesDatabase[i].price %>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <% if ((i+2)%2===1) { %>
+                                </div>
+                                <% } %>
+                                    <% } %>
+                                        <div id="not-found" class="hidden lg:px-8 lg:space-x-16 xl:space-x-16">
+                                            <!-- card -->
+                                            <div class="relative xl:h-80 lg:w-6/12 w-9/12 mx-auto mb-20">
+                                                <!-- yellowbg -->
+                                                <div
+                                                    class="bg-blue-400 absolute -right-4 -bottom-4 h-full w-full rounded-xl shadow-xl">
+                                                </div>
+                                                <div
+                                                    class="relative bg-gray-800 text-gray-100 rounded-xl xl:flex block xl:h-80">
+                                                    <!-- image -->
+                                                    <img src="images/notfound.jpg" alt="JsBasics"
+                                                        class="xl:rounded-l-xl xl:rounded-tr-none xl:w-6/12 lg:h-full rounded-t-xl" />
+                                                    <div class="px-2 py-8 space-y-4">
+                                                        <!-- header -->
+                                                        <div class="font-extrabold text-2xl pl-4">
+                                                            Sry couldnt found what you were looking for!
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+
+                <%- include('footer') %>
+                    <script src="javascripts/main.js"></script>
+                    <script src="javascripts/searchCourse.js"></script>
+            </body>
+
+
+            </html>
